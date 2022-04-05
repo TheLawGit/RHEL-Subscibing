@@ -1,0 +1,10 @@
+---
+- name: install and config dispatcher (apache based)
+  hosts: all
+  tasks:
+    - name : Register with redhat
+      community.general.redhat_subscription:
+        state: present
+        username: rhn-gps-alaidlaw
+        password: 11Di$tro
+        pool_ids: 497caad7-6166-4d82-9c6f-801f5d7c43cc
