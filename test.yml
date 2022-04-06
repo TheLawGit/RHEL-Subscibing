@@ -3,8 +3,8 @@
   hosts: all
   tasks:
     - name : Register with redhat
-      community.general.redhat_subscription:
+      redhat_subscription:
         state: present
-        username: rhn-gps-alaidlaw
-        password: 11Di$tro
+        username: "{{ rhn user }}"
+        password: "{{ rhn pass }}"
         pool_ids: 2c9280817af91203017b1d51f46307b5
