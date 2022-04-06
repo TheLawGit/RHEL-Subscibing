@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name : Register with redhat
-      redhat_subscription:
+      community.general.redhat_subscription:
         state: present
         username: "{{ rhn_user }}"
         password: "{{ rhn_pass }}"
