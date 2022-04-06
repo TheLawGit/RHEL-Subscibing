@@ -1,5 +1,5 @@
 ---
-- name: install and config dispatcher (apache based)
+- name: Run subscription
   hosts: all
   tasks:
     - name : Register with redhat
