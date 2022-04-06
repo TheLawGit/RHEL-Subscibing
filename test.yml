@@ -5,6 +5,6 @@
     - name : Register with redhat
       redhat_subscription:
         state: present
-        username: "{{ rhn user }}"
-        password: "{{ rhn pass }}"
+        username: "{{ rhn_user }}"
+        password: "{{ rhn_pass }}"
         pool_ids: 2c9280817af91203017b1d51f46307b5
